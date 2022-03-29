@@ -1,6 +1,5 @@
 package snakegame.core;
 
-import org.jetbrains.annotations.NotNull;
 import snakegame.GamePanel;
 
 import java.awt.*;
@@ -56,7 +55,7 @@ public abstract class Tile implements Serializable {
 		return Objects.hash(getX(), getY());
 	}
 
-	public void drawRect(@NotNull Graphics g) {
+	public void drawRect(Graphics g) {
 		g.drawRect(
 			getX() * GamePanel.UNIT_SIZE + GamePanel.TILE_PADDING,
 			getY() * GamePanel.UNIT_SIZE + GamePanel.TILE_PADDING,
@@ -65,7 +64,7 @@ public abstract class Tile implements Serializable {
 		);
 	}
 
-	public void drawOval(@NotNull Graphics g) {
+	public void drawOval(Graphics g) {
 		g.fillOval(
 			getX() * GamePanel.UNIT_SIZE + GamePanel.TILE_PADDING,
 			getY() * GamePanel.UNIT_SIZE + GamePanel.TILE_PADDING,

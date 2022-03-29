@@ -2,7 +2,6 @@ package snakegame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-import org.jetbrains.annotations.NotNull;
 import snakegame.features.apples.Apple;
 import snakegame.features.apples.AppleManager;
 import snakegame.snake.*;
@@ -74,10 +73,7 @@ public class GamePanel extends JPanel implements ActionListener {
 		this.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-//				int x = e.getX() / UNIT_SIZE;
-//				int y = e.getY() / UNIT_SIZE;
-//
-//				apples.spawnPosApple(x, y);
+
 			}
 		});
 	}
@@ -100,7 +96,7 @@ public class GamePanel extends JPanel implements ActionListener {
 		drawGame(g);
 	}
 
-	public void drawGame(@NotNull Graphics g) {
+	public void drawGame(Graphics g) {
 
 //		HERE: Game Grid
 		g.setColor(new Color(255, 255, 255, 16));

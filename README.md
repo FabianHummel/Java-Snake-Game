@@ -6,6 +6,8 @@ A totally overcomplicated implementation of the famous snake game written in Jav
 
 This application utilizes the Java Swing framework together with a custom-made list library for enhanced backend management.
 
+## ✨ Coming Up:
+
 ## :warning: Side Notes:
 
 The game is still in a very early state and contains a huge amount of bugs. Also, to be able to respawn, you need to restart the game.
