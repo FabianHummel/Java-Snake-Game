@@ -8,6 +8,7 @@ This application utilizes the Java Swing framework together with a custom-made l
 
 ## ✨ Coming Up:
 
+
 ## :warning: Side Notes:
 
 The game is still in a very early state and contains a huge amount of bugs. Also, to be able to respawn, you need to restart the game.
