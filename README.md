@@ -6,7 +6,7 @@ A totally overcomplicated implementation of the famous snake game written in Jav
 
 This application utilizes the Java Swing framework together with a custom-made list library for enhanced backend management.
 
-## ✨ Coming Up:
+## :sparkles: Coming Up:
 
 
 ## :warning: Side Notes:
