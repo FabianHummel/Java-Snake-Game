@@ -34,9 +34,12 @@ public class GamePanel extends JPanel implements ActionListener {
 	private List<Snake> allSnakes;
 	private Snake thisSnake;
 	private AppleManager apples;
+	private Timer timer;
+
+	public static GamePanel gp;
 
 	public GamePanel() {
-		
+		gp = this;
 		this.setPreferredSize(
 			new Dimension(
 				SCREEN_WIDTH, SCREEN_HEIGHT
@@ -147,7 +150,12 @@ public class GamePanel extends JPanel implements ActionListener {
 
 		// HERE: Initialize Game status and event updates
 		running = true;
-		new Timer(DELAY, this).start();
+
+		if (timer != null) {
+			timer.stop();
+		}
+		timer = new Timer(DELAY, this);
+		timer.start();
 	}
 
 	public void gameLoop() {

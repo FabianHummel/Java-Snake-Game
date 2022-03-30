@@ -64,5 +64,6 @@ public class Snake extends JoinedList<SnakeTile> {
 	public void collide() {
 		System.out.println("Collided");
 		GamePanel.stopGame();
+		GamePanel.gp.gameStart();
 	}
 }
