@@ -2,6 +2,7 @@ package snakegame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+import snakegame.library.JoinedList;
 import snakegame.features.apples.Apple;
 import snakegame.features.apples.AppleManager;
 import snakegame.snake.*;
@@ -133,7 +134,7 @@ public class GamePanel extends JPanel implements ActionListener {
 
 		// HERE: Initialize Snake
 		thisSnake = new Snake(
-			20,
+			5,
 			(SCREEN_WIDTH / UNIT_SIZE) / 2,
 			(SCREEN_HEIGHT / UNIT_SIZE) / 2,
 			new Color(200, 200, 200)

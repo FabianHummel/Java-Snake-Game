@@ -2,8 +2,8 @@ package snakegame.snake;
 
 import java.awt.*;
 
-import com.fabii.joinedlist.JoinedList;
 import snakegame.GamePanel;
+import snakegame.library.JoinedList;
 import snakegame.util.MoveDirection;
 
 public class Snake extends JoinedList<SnakeTile> {
