@@ -34,7 +34,9 @@ public class GamePanel extends JPanel implements ActionListener {
 	private List<Snake> allSnakes;
 	private Snake thisSnake;
 	private AppleManager apples;
-	private Timer timer;
+	private Timer timer = new Timer(
+		DELAY, this
+	);
 
 	public static GamePanel gp;
 
@@ -128,6 +130,7 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 
 	public void gameStart() {
+		timer.restart();
 
 		apples = new AppleManager();
 		for (int i = 0; i < START_APPLES; i++) {
@@ -150,12 +153,6 @@ public class GamePanel extends JPanel implements ActionListener {
 
 		// HERE: Initialize Game status and event updates
 		running = true;
-
-		if (timer != null) {
-			timer.stop();
-		}
-		timer = new Timer(DELAY, this);
-		timer.start();
 	}
 
 	public void gameLoop() {
